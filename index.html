@@ -1,43 +1,240 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Hockeys website</title>
-</head>
-<body>
+  </head>
+  <body class="max-w-7xl mx-auto">
     <!-- navbar section -->
     <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-            </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Home</a></li>
-              <li><a>About</a></li>
-              <li><a>Pages</a></li>
-              <li><a>Blog</a></li>
-              <li><a>Contact</a></li>
-            </ul>
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
           </div>
-          <a class="btn btn-ghost text-xl">Hockey’s</a>
-         
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
             <li><a>Home</a></li>
-              <li><a>About</a></li>
-              <li><a>Pages</a></li>
-              <li><a>Blog</a></li>
-              <li><a>Contact</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
           </ul>
         </div>
-        <div class="navbar-end">
-          <a class="btn">Get Ticket</a>
+        <a class="btn btn-ghost text-xl">Hockey’s</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Pages</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn">Get Ticket</a>
+      </div>
+    </div>
+
+    <!-- banner section -->
+
+    <div class="carousel w-full">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="./Images/1.png" class="w-full" />
+        <div
+          class="absolute flex transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
         </div>
       </div>
-</body>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="./Images/2.png" class="w-full" />
+        <div
+          class="absolute flex transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="./Images/3.png" class="w-full" />
+        <div
+          class="absolute flex transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <img src="./Images/4.png" class="w-full" />
+        <div
+          class="absolute flex transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Professional Hockeys Club section -->
+    <div>
+      <div class="text-center mt-9">
+        <h2 class="text-2xl font-bold">Professional Hockeys Club</h2>
+        <p class="text-[rgba(19, 19, 24, 0.60)]">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat <br />
+          dolor. Purus urna in sit nullam proin.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-4 p-24">
+        <div>
+          <img class="p-7 relative" src="./Images/Group 9 (3).jpg" alt="" />
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="120"
+              height="120"
+              viewBox="0 0 120 120"
+              fill="none"
+            >
+              <path
+                d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z"
+                fill="#E7E7E8"
+              />
+              <path
+                d="M114.266 60C117.433 60 120.028 57.4265 119.726 54.2739C118.63 42.8387 114.268 31.914 107.102 22.8328C98.7478 12.2455 87.0702 4.78141 73.9534 1.64503C60.8366 -1.49135 47.0457 -0.117159 34.8058 5.54589C22.5658 11.2089 12.5907 20.8306 6.48991 32.8583C0.389129 44.8861 -1.48153 58.6185 1.17978 71.8398C3.84108 85.0612 10.8791 97.0004 21.1583 105.731C31.4376 114.462 44.3584 119.475 57.8362 119.961C69.3965 120.378 80.7882 117.444 90.6624 111.574C93.3847 109.955 93.9276 106.34 92.0567 103.785C90.1858 101.229 86.611 100.708 83.8529 102.265C76.0892 106.646 67.2324 108.824 58.2498 108.499C47.3483 108.106 36.8973 104.051 28.5829 96.9895C20.2686 89.9277 14.5759 80.2707 12.4233 69.5766C10.2707 58.8826 11.7837 47.7751 16.7184 38.0465C21.653 28.3178 29.7213 20.5354 39.6216 15.9548C49.5219 11.3742 60.6767 10.2627 71.2862 12.7996C81.8957 15.3364 91.3411 21.3737 98.0985 29.9373C103.666 36.9936 107.142 45.426 108.193 54.2786C108.566 57.4236 111.098 60 114.266 60Z"
+                fill="#FF4240"
+              />
+            </svg>
+            <h2 class="font-bold text-3xl absolute -mt-28 pl-14">87%</h2>
+          </div>
+          <div class="text-center pr-18">
+            <h4 class="font-bold">Prayer Facility</h4>
+            <p>
+              <small>Amet consectetur. Condimentum dignissim adipiscing </small
+              >.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <img class="p-7 relative" src="./Images/Group 9.jpg" alt="" />
+          <h2 class="font-bold text-3xl absolute -mt-28 pl-14">87%</h2>
+          <div class="text-center pr-18">
+            <h4 class="font-bold">Prayer Facility</h4>
+            <p>
+              <small>Amet consectetur. Condimentum dignissim adipiscing </small
+              >.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img class="p-7 relative" src="./Images/Group 9 (2).jpg" alt="" />
+          <h2 class="font-bold text-3xl absolute -mt-28 pl-14">87%</h2>
+          <div class="text-center pr-18">
+            <h4 class="font-bold">Prayer Facility</h4>
+            <p>
+              <small>Amet consectetur. Condimentum dignissim adipiscing </small
+              >.
+            </p>
+          </div>
+        </div>
+        <div class="">
+          <img class="p-7 relative" src="./Images/Group 9 (1).jpg" alt="" />
+          <h2 class="font-bold text-3xl absolute -mt-28 pl-14">87%</h2>
+          <div class="text-center pr-18">
+            <h4 class="font-bold">Prayer Facility</h4>
+            <p>
+              <small>Amet consectetur. Condimentum dignissim adipiscing </small
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- program section -->
+    <div class="text-center mt-9">
+      <h2 class="text-2xl font-bold">Professional Hockeys Club</h2>
+      <p class="text-[rgba(19, 19, 24, 0.60)]">
+        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+        placerat <br />
+        dolor. Purus urna in sit nullam proin.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="card   image-full">
+        <figure><img src="./Images/2.png" class="w-full" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title mt-20 text-white">Junior Program</h2>
+          <p class="text-white">
+            Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+            <br />
+            enim sagittis turpis in magna. Id et sed euismod natoque amet <br />
+            nunc morbi nulla. Tortor congue sed et in.
+          </p>
+          <div class="card-actions justify-start">
+            <button class="btn btn-error text-white">Register Now!</button>
+          </div>
+        </div>
+      </div>
+      <div class="card   image-full">
+        <figure><img src="./Images/3.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title mt-20 text-white">Teenager Program</h2>
+          <p class="text-white">
+            Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+            <br />
+            enim sagittis turpis in magna. Id et sed euismod natoque amet <br />
+            nunc morbi nulla. Tortor congue sed et in.
+          </p>
+          <div class="card-actions justify-start">
+            <button class="btn btn-error text-white">Register Now!</button>
+          </div>
+        </div>
+      </div>
+      <div class="card w-full image-full">
+        <figure><img src="./Images/3.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title mt-20 text-white">Teenager Program</h2>
+          <p class="text-white">
+            Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+            <br />
+            enim sagittis turpis in magna. Id et sed euismod natoque amet <br />
+            nunc morbi nulla. Tortor congue sed et in.
+          </p>
+          <div class="card-actions justify-start">
+            <button class="btn btn-error text-white">Register Now!</button>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+  </body>
 </html>
